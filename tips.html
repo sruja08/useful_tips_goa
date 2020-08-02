@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>User_tips</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color:" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Virtual Tourist<br>Guide</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#bestplaces" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Best Places</a> 
+    <a href="#adventures" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Adventures</a> 
+    <a href="#festivals" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Festivals</a> 
+    <a href="#Shopping" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Shopping</a> 
+    <a href="#Contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Virtual Tourist Guide</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="bestplaces">
+    <h1 class="w3-jumbo"><b>Welcome to Goa</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Must Visit places</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- must-visit places -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <h1>1.Calangute</h1>
+      <img src="images/calc1.jpg" style="width:100%" onclick="onClick(this)" alt="1.Calangute"><br><br>
+      <h1>2.Fort Aguada</h1>
+      <img src="images/fort1.jpg" style="width:100%" onclick="onClick(this)" alt="Fort Aguada"><br><br>
+      <h1>3.Dudhsagar Falls</h1>
+      <img src="images/pic3.jpg" style="width:100%" onclick="onClick(this)" alt="Dudhsagar Falls"><br><br>
+    
+    </div>
+
+    <div class="w3-half">
+      <h1>4.Deltin Royale Casino</h1>
+      <img src="images/pic4.jpg" style="width:100%" onclick="onClick(this)" alt="Deltin Royale Casino"><br><br>
+      <h1>5.Basilica of Bom Jesus</h1>
+      <img src="images/pic5.jpg" style="width:100%" onclick="onClick(this)" alt="Basilica of Bom Jesus"><br><br>
+      <h1>6.Baga Beach</h1>
+      <img src="images/pic6.jpg" style="width:100%" onclick="onClick(this)" alt="Baga Beach">
+      
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- adventures -->
+  <div class="w3-container" id="adventures" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b> Activities to Do in Goa</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   <div class="w3-row-padding">
+    <div class="w3-half">
+      <h1>1.Dolphin Drive</h1>
+      <img src="images/act2.png" style="width:100%" onclick="onClick(this)" alt="Dolphin Drive">
+      <p>Dolphin drive is one of the affordable fun ventures in Goa. Dolphin show is very famous in Goa where people enjoy it a lot. You have to try it once after visiting Goa, as it's a  great experience and under one’s budget.</p><br>
+      <h1>2.Snorkeling</h1>
+      <img src="images/act3.jpg" style="width:100%" onclick="onClick(this)" alt="Snorkeling"><p>Snorkeling is a must while visiting Goa, this is the favourite thing to do among the tourists. For Snorkeling best location in Goa is Goan beach. Snorkelling is the same as swimming but you have to wear equipment like a mask and tube for breathing. Bogmalo beach is a popular place for Snorkeling in south Goa.
+      </p><br>
+
+      <h1>3.Scuba Diving</h1>
+      <img src="images/act4.jpg" style="width:100%" onclick="onClick(this)" alt="Scuba Diving">
+      <p>Most interesting activity in Goa is Scuba diving and the best place for Scuba diving is Grand Island in South Goa. You’ll be able to see the clear water and the best place for trying all the water activity.</p><br>
+    
+    </div>
+
+    <div class="w3-half">
+      <h1>4.Jetlev Flyer</h1>
+      <img src="images/act6.jpg" style="width:100%" onclick="onClick(this)" alt="Jetlev Flyer">
+      <p>You definitely have to experience one of the best adventures by taking Jetlev Flyer. They will give you all the instructions and proper training before heading to this activity. With the pressure of water, you’ll fly high and enjoy the moments in the chapora river.
+      </p><br>
+      <h1>5.Ocean Trek in Arambol</h1>
+      <img src="images/act7.jpg" style="width:100%" onclick="onClick(this)" alt="Ocean Trek in Arambol">
+      <p>This trek starts from grassy paliem towards northern Arambol beach and is famous for its freshwater lake just a few meters from the sea. You can take a dip in a saltwater lake or you can dip yourself in Multani mitti medicinal mud.
+      </p>
+      
+    </div>
+  </div>
+
+  <!-- Festivals-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  </div>
+  
+  
+  <div class="w3-container" id="festivals" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Festivals in goa</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p><b>Goa-'Pearl of the Orient'</b>:</p>
+  </div>
+
+  <!--festival-cards -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/fest1.jpg" alt="Carnival" style="width:100%">
+        <div class="w3-container">
+          <h3>Carnival</h3>
+          <p>The most famous of all festivals, the Carnival is the epitome of celebrations in Goa. It is celebrated for three days and three nights and preceded by the month of Lent (February).. Though introduced by the Portuguese colonial rule in the 18th century it is celebrated in Goanese style. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/fest2.jpg" alt="Christmas" style="width:100%">
+        <div class="w3-container">
+          <h3>Christmas</h3>
+          <p>Goa is the best place to celebrate Christmas in India. With its Portuguese legacy and Catholic population, Christmas here is celebrated with a gripping fervour. The celebrations, decorations and the carols everywhere are an unforgettable ode to the eyes. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/fest3.jpg" alt="Grape Escapade" style="width:100%">
+        <div class="w3-container">
+          <h3>Grape Escapade</h3>
+          <p>Goa hosts Grape Escapade - The Biggest Wine Festival in the country every year in Panjim. The Annual Grape Escapade witnesses wine connoisseurs from all around the world rushing in to savour the delectable flavours of wine and grapes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/fest6.jpg" alt="Bonderam Festival" style="width:100%">
+        <div class="w3-container">
+          <h3>Bonderam Festival</h3>
+          <p>Celebrated on the fourth Saturday in August, this festival takes place on the quiet, little island called Divar (12 km from Panaji). During this time, this small island comes alive with people, music, dance and feasts.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/fest5.jpg" alt="Sunburn" style="width:100%">
+        <div class="w3-container">
+          <h3>Sunburn</h3>
+          <p>Held in December every year at Candolim beach, the Sunburn festival has an array of famous artists performing live. The Electronic Dance Night is an experience to be cherished forever. The ever ending partying spirit is spread over 3 days when each and every person is involved in tapping feet to the beats of legendary personalities. It also has delicious food shacks, markets, and water sports on its list!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/fest4.jpg" alt="Sao Joao Festival" style="width:100%">
+        <div class="w3-container">
+          <h3>Sao Joao Festival</h3>
+          <p>Sao Joao Is one of the most prominent festivals of the Catholic community. Held at the beginning of the monsoon season, this feast honours Saint John the Baptist. It is a fun-filled and colourful experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--Shopping -->
+  <div class="w3-container" id="Shopping" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Shopping</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   <div class="w3-row-padding">
+    <div class="w3-half">
+      <h1>1.Tibetan Market on Baga Road</h1>
+      <img src="images/mar3.jpg" style="width:100%" onclick="onClick(this)" alt=".Tibetan Market on Baga Road">
+      <p>Calangute - Baga Rd, near Coffee Day, Umtav Vado, Khobra Waddo, Baga, Goa 403516
+      </p><br>
+      <h1>2.Flea market at Anjuna Beach</h1>
+      <img src="images/mar2.jpg" style="width:100%" onclick="onClick(this)" alt="Flea market at Anjuna Beach"><p>Time-tested beachfront flea market open Wednesdays selling eclectic goods, including handmade items.</p>
+        <p>Address: Dmello Vaddo, Anjuna, Goa 403509</p><br>
+      <h1>3.Night market at Arpora</h1>
+      <img src="images/mar1.jpg" style="width:100%" onclick="onClick(this)" alt="Night market at Arpora">
+      <p>Upbeat evening marketplace offering textiles, food stalls, shoes, spices, live music & bars.</p>
+      <p>Address: H. No. 392 Casa Babu, Aguada - Siolim Rd, near Chauranghinath Temple, Arpora, Goa 403516
+      </p>
+    </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="Contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We will be happy to help you!!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">@VTG -Virtual Tourist Guide</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
